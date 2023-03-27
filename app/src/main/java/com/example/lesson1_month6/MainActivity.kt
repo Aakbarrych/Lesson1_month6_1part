@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val randomIndex = (urlArray.indices).random()
         binding.submitBtn.setOnClickListener {
             urlArray.add(binding.editText.text.toString())
-            Log.d("MyTag", "My List Contents: $urlArray")
         }
         binding.randomBtn.setOnClickListener{
             binding.image.loadImage(urlArray[randomIndex])
